@@ -226,7 +226,7 @@ async def handleJson(websocket, requestjson, allowed):
             r = requests.post(
                 fileUrl,
                 files={
-                    "comment": ("comment", "Uploaded by Companion for Linux (yay!)"),
+                    "comment": ("comment", ""),
                     "file": (fileName, f)
                 },
                 headers=headers
