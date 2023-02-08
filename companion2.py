@@ -92,7 +92,7 @@ class FileChangedHandler(pyinotify.ProcessEvent):
                     result = requests.post(
                         self._uploadUrl,
                         files={
-                            "comment": ("comment", "Uploaded by Companion for Linux (yay!)"),
+                            "comment": ("comment", ""),
                             "file": (self._fileName, f)
                         },
                         headers=headers
